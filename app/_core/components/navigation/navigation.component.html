@@ -1,0 +1,8 @@
+<div class="navigation">
+  <div *ngFor="let tab of tabs" class="tab" [class.tab-bottom]="tab.bottom" [routerLink]="tab.url" [routerLinkActive]="'tab-active'">
+    <i [class]="tab.icon"></i>
+    <div class="text">
+      {{ tab.label }}
+    </div>
+  </div>
+</div>

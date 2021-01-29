@@ -1,0 +1,38 @@
+@import 'app/theme/styles.scss';
+@import "~bootstrap/scss/bootstrap";
+@import '~bootstrap/scss/bootstrap-grid.scss';
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts/";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+html, body { 
+   height: 100%;
+   font-size: 14px !important;
+ }
+body { 
+   margin: 0; 
+   font-family: Roboto, "Helvetica Neue", sans-serif; 
+   background: url('assets/images/paper-background.svg') repeat-y center center;
+   background-size: cover;
+}
+
+//scrollbar
+::-webkit-scrollbar {
+   width: 5px;
+ }
+ 
+ ::-webkit-scrollbar-track {
+   background: transparent;
+ }
+ 
+ ::-webkit-scrollbar-thumb {
+   background: $secondary;
+ }
+ 
+ ::-webkit-scrollbar-thumb:hover {
+   background: darken($secondary, 10);
+ }
+
+ a {
+   cursor: pointer;
+ }

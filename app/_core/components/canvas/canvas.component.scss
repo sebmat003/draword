@@ -1,0 +1,111 @@
+@import '../../../theme/helpers/variables';
+body {
+    background: none;
+}
+canvas {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background: url(../../../../assets/images/background/board.png) no-repeat center center fixed; background-size: cover;
+    // background: white;
+}
+
+.canvas-options {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    pointer-events: none;
+}
+
+.background-picker {
+    position: relative;
+    margin: 2rem 3rem;
+    i {
+        margin-right: 1rem;
+    }
+}
+
+i {
+    font-size: 2rem;
+    pointer-events: visible;
+    color: white;
+    cursor: pointer;
+    transition: color 0.1s linear;
+    &:hover {
+        color: rgb(25, 25, 25);
+    }
+    &.active{
+        color: $warning;
+    }
+}
+
+.colors {
+    i {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .dot {
+        height: 2rem;
+        width: 2rem;
+        margin: 2rem 0.5rem;
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        pointer-events: visible;
+        cursor: pointer;
+            &.black {
+                background-color: rgb(25, 25, 25);
+            }
+            &.white {
+                background-color: white;
+                border: 1px solid gray;
+            }
+            &.red {
+                background-color: rgb(216, 55, 55);
+            }
+            &.green {
+                background-color: rgb(41, 116, 41);
+            }
+            &.blue {
+                background-color: rgb(32, 32, 202);
+            }
+            &.color-picker {
+                background:
+                    linear-gradient(red, transparent),
+                    linear-gradient(to top left, lime, transparent),
+                    linear-gradient(to top right, blue, transparent);
+                background-blend-mode: screen;
+            }
+            &:last-child {
+                margin-right: 3rem;
+            }
+    
+      }
+}
+
+.brush-size-picker {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 3rem 3rem;
+    i {
+        margin: 1rem 0;
+        display: block;
+    }
+
+    mat-slider {
+        pointer-events: visible;
+    }
+}
+
+
+::ng-deep .mat-accent .mat-slider-thumb, ::ng-deep .mat-accent .mat-slider-track-fill {
+    background-color: $warning;
+}

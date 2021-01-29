@@ -1,0 +1,25 @@
+@import '../../../theme/helpers/variables';
+
+input {
+   width: 15rem;
+}
+
+.arrows {
+   width: 2rem;
+   button {
+      padding: 1.7rem 0;
+
+      &:first-child {
+         padding-top: 1rem;
+         padding-bottom: 0;
+      }
+
+      i {
+         color: $secondary;
+         transition: color 0.1s;
+         &:hover {
+            color: $primary;
+         }
+      }
+   }
+}

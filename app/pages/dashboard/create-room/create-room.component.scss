@@ -1,0 +1,42 @@
+@import '../../../theme/helpers/variables';
+input {
+    width: 15rem;
+}
+
+.category-modal {
+    background-color: white;
+    border: 1px solid $secondary;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    max-height: 15rem;
+    overflow: auto;
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+     &::-webkit-scrollbar-thumb {
+        border-radius: 12px;
+    }
+}
+
+.category-checkbox {
+    i {
+        visibility: hidden;
+        opacity: 0.5;
+    }
+    &:hover {
+        i {
+            color: $dark;
+            transition: opacity 0.4s;
+            visibility: visible;
+            &:hover {
+                z-index: 100;
+                opacity: 1;
+            }
+        }
+    }
+
+}
+
+

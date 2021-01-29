@@ -1,0 +1,23 @@
+.btn.btn {
+   border-radius: 20px;
+   padding: 0.2rem 1rem;
+   box-shadow: none !important;
+   i {
+      margin-right: 2px;
+   }
+}
+
+.btn.btn-big {
+   min-width: 15rem;
+   padding: 0.5rem 1.5rem;
+}
+
+.btn-light.btn-light.btn-light.btn-light {
+   background-color: transparent;
+   border: none;
+   &:hover, &:focus, &:active {
+      color: inherit;
+      background-color: transparent;
+      border: none;
+   }
+}

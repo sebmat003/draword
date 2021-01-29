@@ -1,0 +1,26 @@
+// COLORS SET 1
+$primary: #1B9782;
+$secondary: #97B0AA;
+$warning: #FFD500;
+$danger: #ff4136;
+$light: #43c9b2;
+$dark: #354B46;
+$blue: #0F659F;
+$gray: #707070;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
+);
+
+.primary {
+  color: $primary;
+}
+
+.secondary {
+  color: $secondary;
+}

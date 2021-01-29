@@ -1,0 +1,59 @@
+@import '../../theme/helpers/variables';
+.number {
+  font-family: Cheri;
+  font-size: 3rem;
+}
+
+.list-group {
+  overflow: auto;
+  height: 85%;
+}
+
+.list-group.full-width {
+  height: calc(100% - 1rem);
+  margin: 0.5rem 0;
+}
+
+.list-group-item.clickable {
+  cursor: pointer;
+  height: 6rem;
+  border: none;
+  &:hover {
+    background-color: $primary;
+    color: white;
+    .number {
+      color: white;
+    }
+  }
+}
+
+.user-input {
+  position: absolute;
+  bottom: 0;
+  left: 15rem;
+  right: 15rem;
+  width: 60%;
+  margin: 0 auto;
+  z-index: 1;
+  input {
+    font-size: 1.5rem;
+
+   &::placeholder {
+      opacity: 0.5;
+    }
+  }
+}
+
+.game-information {
+  position: absolute;
+  width: calc(100% - 30rem);
+  color: white;
+  background-color: $secondary;
+  height: 5rem;
+  margin: 5rem 15rem 0 15rem;
+}
+
+.guess-word {
+  letter-spacing: 0.5rem;
+}
+

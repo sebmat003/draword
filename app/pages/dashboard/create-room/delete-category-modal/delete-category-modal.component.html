@@ -1,0 +1,11 @@
+<form>
+    <div mat-dialog-title>Delete category {{data.name}}</div>
+    <mat-dialog-content class="mat-typography">
+        <p>Are you sure you want to delete entire category?</p>
+    </mat-dialog-content>
+    
+    <mat-dialog-actions class="float-right">
+        <button type="button" mat-dialog-close class="btn btn-outline-dark m-2">No</button>
+        <button type="submit" [mat-dialog-close]="true" class="btn btn-danger">Yes</button>
+    </mat-dialog-actions>
+</form>

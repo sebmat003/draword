@@ -1,0 +1,43 @@
+@import '../../../theme/helpers/variables';
+.navbar {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   width: 100%;
+   height: 10rem;
+   text-align: center;
+   justify-content: center;
+   z-index: 2;
+
+   &.plain-navbar {
+      background-color: $primary;
+      height: 5rem;
+      img {
+         width: 12rem;
+      }
+   }
+
+   .wavy-navbar {
+      overflow: hidden;
+      svg {
+         position: absolute;
+         top: 0;
+         left: 0;
+         stroke: none;
+         fill: $primary;
+      }
+   }
+
+   img {
+      position: absolute;
+      width: 20rem;
+      height: auto;
+   }
+}
+
+.back-menu {
+   position: absolute;
+   // top: 0;
+   left: 1rem;
+ }

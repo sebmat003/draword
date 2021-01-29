@@ -1,0 +1,37 @@
+<div class="page-content">
+   <p class="page-header">Let's play!</p>
+   <form>
+      <input class="form-control d-inline-block m-3 p-3" id="name" placeholder="Type your name..." required>  
+      
+      <div class="m-3">
+         <h4>Choose your character</h4>
+         <div class="d-flex justify-content-center">
+            <div class="arrows">
+               <button class="btn-icon" type="button" (click)="changeElement(0, 'left')">
+                  <i class="fa-2x fas fa-chevron-left"></i>
+               </button>
+               <button class="btn-icon" type="button" (click)="changeElement(1, 'left')">
+                  <i class="fa-2x fas fa-chevron-left"></i>
+               </button>
+               <button class="btn-icon" type="button" (click)="changeElement(2, 'left')">
+                  <i class="fa-2x fas fa-chevron-left"></i>
+               </button>
+            </div>
+            <app-display-character [characterSet]="characterSet"></app-display-character>
+            <div class="arrows">
+               <button class="btn-icon" type="button" (click)="changeElement(0, 'right')">
+                  <i class="fa-2x fas fa-chevron-right"></i>
+               </button>
+               <button class="btn-icon" type="button" (click)="changeElement(1, 'right')">
+                  <i class="fa-2x fas fa-chevron-right"></i>
+               </button>
+               <button class="btn-icon" type="button" (click)="changeElement(2, 'right')">
+                  <i class="fa-2x fas fa-chevron-right"></i>
+               </button>
+            </div>
+         </div>
+      </div>
+      <button type="submit" class="btn btn-big btn-primary mt-5" (click)="moveToExistingGame()">Play!</button>
+
+   </form>
+</div>
