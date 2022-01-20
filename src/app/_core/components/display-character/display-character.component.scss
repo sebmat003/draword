@@ -1,0 +1,9 @@
+.character {
+  position: relative;
+  img {
+     position: absolute;
+     max-width: 100%;
+     left: 0;
+     right: 0;
+  }
+}

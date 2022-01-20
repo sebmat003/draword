@@ -1,0 +1,7 @@
+<nav class="navbar" [ngClass]="data.curved ? '' : 'plain-navbar'">
+  <div *ngIf="data.backButton" class="back-menu">
+    <button class="btn btn-dark" routerLink="/dashboard/quick-play"><i class="fas fa-caret-left"></i> Back</button>
+  </div>  
+  <div *ngIf="data.curved" class="wavy-navbar"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.84,140.63 C221.50,161.34 211.34,97.20 504.22,124.83 L500.00,0.00 L0.00,0.00 Z"></path></svg></div>
+  <img src="../../../../assets/images/logo.svg" alt="logo">
+</nav>

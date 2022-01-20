@@ -1,0 +1,32 @@
+<canvas #canvas>
+
+</canvas>
+<div class="canvas-options">
+  <div class="d-flex justify-content-between">
+    <div class="background-picker">
+      <i class="fas fa-chevron-left" matTooltip="previous background" matTooltipShowDelay="1000"></i>
+      <i class="fas fa-chevron-right" matTooltip="next background" matTooltipShowDelay="1000"></i>
+    </div>
+    <div class="colors">
+      <span class="dot" matTooltip="clear a whole screen" matTooltipShowDelay="1000" (click)="clearCanvas()">
+        <i class="fas fa-chalkboard"></i>
+      </span>
+      <span class="dot" matTooltip="eraser" matTooltipShowDelay="1000"><i class="fas fa-eraser" [class.active]="activeTool === 'eraser'" (click)="changeTool('eraser')"></i></span>
+      <span class="dot black" matTooltip="black" matTooltipShowDelay="1000" (click)="changeColor('black')"></span>
+      <span class="dot white" matTooltip="white" matTooltipShowDelay="1000" (click)="changeColor('white')"></span>
+      <span class="dot red" matTooltip="red" matTooltipShowDelay="1000" (click)="changeColor('red')"></span>
+      <span class="dot green" matTooltip="green" matTooltipShowDelay="1000" (click)="changeColor('green')"></span>
+      <span class="dot blue" matTooltip="blue" matTooltipShowDelay="1000" (click)="changeColor('blue')"></span>
+      <span class="dot color-picker" matTooltip="color picker" matTooltipShowDelay="1000"></span>
+    </div>
+  </div>
+  <div class="brush-size-picker">
+    <div class="text-right">
+      <mat-slider vertical min="1" max="10" step="1" [(ngModel)]="this.lineWidth" (ngModelChange)="changeThickness()"></mat-slider>
+      <i class="fas fa-pencil-alt" [class.active]="activeTool === 'pencil'" matTooltip="pencil" matTooltipShowDelay="1000" (click)="changeTool('pencil')"></i>
+      <i class="fas fa-highlighter" [class.active]="activeTool === 'marker'" matTooltip="marker" matTooltipShowDelay="1000" (click)="changeTool('marker')"></i>
+      <i class="fas fa-paint-brush" [class.active]="activeTool === 'brush'" matTooltip="brush" matTooltipShowDelay="1000" (click)="changeTool('brush')"></i>
+    </div>
+  </div>
+</div>
+

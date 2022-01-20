@@ -1,0 +1,38 @@
+.page {
+   margin: 12rem 20rem 0 20rem;
+   background-color: transparent;
+   width: 100%;
+}
+
+.page-content {
+   text-align: center;
+}
+
+.page-header {
+   width: 100%;
+   font-size: 1.5rem;
+   margin-bottom: 0.5rem;
+   font-weight: 500;
+}
+
+.side-panel {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   z-index: 1;
+   width: 17rem;
+   margin-top: 12rem;
+   background-color: white;
+   height: calc(100vh - 15rem);
+   border: 1px solid $primary;
+}
+
+.side-left {
+   left: 0;
+   border-radius: 0 1rem 1rem 0;
+}
+
+.side-right {
+   right: 0;
+   border-radius: 1rem 0 0 1rem;
+}

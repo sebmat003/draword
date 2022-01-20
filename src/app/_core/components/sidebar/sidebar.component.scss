@@ -1,0 +1,22 @@
+@import '../../../theme/helpers/variables';
+.sidebar {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   width: 15rem;
+   height: 100vh;
+   color: white;
+   z-index: 1;
+   margin: 0;
+   padding: 0;
+   
+   &.sidebar-left {
+      background: linear-gradient(to right, $dark 0%, $primary 100%);
+      left: 0;
+   }
+
+   &.sidebar-right {
+      right: 0;
+      background: linear-gradient(to left, $dark 0%, $primary 100%);
+   }
+}

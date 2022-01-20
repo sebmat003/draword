@@ -1,0 +1,19 @@
+.table-hover {
+    .mat-row:hover {
+        background-color: $primary;
+        cursor: pointer;
+        .mat-cell {
+            color: white;
+        }
+    }
+}
+
+.table-header {
+    color: $primary;
+    font-weight: 500;
+    font-size: 1.2rem;
+    width: 80%;
+    padding-bottom: 0.5rem;
+    margin: 1rem 10% 0.5rem 10%;
+    border-bottom: 1px solid $primary;
+}
