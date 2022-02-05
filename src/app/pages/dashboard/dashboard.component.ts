@@ -39,22 +39,7 @@ export class DashboardComponent implements OnInit {
     },
   ];
 
-  public playersOnline = this.playersService.playersOnline;
-  public players = this.playersService.players;
-  public displayedColumns = ['name', 'level', 'session_time'];
-  public user = this.authService.user;
-
-  constructor(
-    private playersService: PlayersService,
-    private authService: AuthService,
-    private dialog: MatDialog
-  ) {}
+  constructor() {}
 
   public ngOnInit(): void {}
-
-  public openPlayerModal(player: IPlayer): void {
-    this.dialog.open(PlayerInfoModalComponent, {
-      data: player,
-    });
-  }
 }

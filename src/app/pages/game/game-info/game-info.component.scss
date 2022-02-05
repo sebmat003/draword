@@ -1,0 +1,14 @@
+@import "../../../theme/helpers/variables";
+
+.game-information {
+  color: white;
+  background-color: $secondary;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+}
+
+.guess-word {
+  letter-spacing: 0.5rem;
+}

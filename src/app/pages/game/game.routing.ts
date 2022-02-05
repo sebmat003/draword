@@ -1,3 +1,4 @@
+import { GameComponent } from './game.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from 'src/app/_core/components/layout/layout.component';
@@ -7,10 +8,7 @@ const routes: Routes = [
   { path: '', redirectTo: ':id', pathMatch: 'full' },
   {
     path: '',
-    // canActivate: [AuthGuard],
-    component: LayoutComponent,
-    data: { curved: false, backButton: true },
-    children: [{ path: ':id', component: DrawingPanelComponent }],
+    children: [{ path: ':id', component: GameComponent }],
   },
 ];
 

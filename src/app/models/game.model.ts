@@ -2,7 +2,7 @@ import { IPlayer } from './player.model';
 import { ICategory } from './room.model';
 
 export interface IMessage {
-  msg: string;
+  message: string;
   author: string;
   datetime: string;
 }

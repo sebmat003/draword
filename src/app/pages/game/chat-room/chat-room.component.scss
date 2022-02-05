@@ -1,0 +1,23 @@
+@import "../../../theme/helpers/variables";
+.list-group {
+  overflow: auto;
+  height: 85%;
+}
+
+.list-group.full-width {
+  height: calc(100% - 1rem);
+  margin: 0.5rem 0;
+}
+
+.list-group-item.clickable {
+  cursor: pointer;
+  height: 6rem;
+  border: none;
+  &:hover {
+    background-color: $primary;
+    color: white;
+    .number {
+      color: white;
+    }
+  }
+}

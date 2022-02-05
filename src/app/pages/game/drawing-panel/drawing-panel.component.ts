@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { IGame, IMessage } from './../../../models/game.model';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-drawing-panel',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./drawing-panel.component.scss'],
 })
 export class DrawingPanelComponent implements OnInit {
+  @Input() public currentWord!: string;
+  @Input() public game!: IGame;
+  public userMessage!: IMessage;
   constructor() {}
 
   public ngOnInit(): void {}

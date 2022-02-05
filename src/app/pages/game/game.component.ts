@@ -16,7 +16,6 @@ export class GameComponent implements OnInit {
   public id!: number;
   public room!: IRoom;
   public game!: IGame;
-  public userMessage!: Message;
   public currentWord!: string;
   constructor(
     private router: Router,
@@ -25,6 +24,10 @@ export class GameComponent implements OnInit {
   ) {}
 
   public ngOnInit(): void {
+    this._initializeSettings();
+  }
+
+  private _initializeSettings(): void {
     const url = this.router.url.split('/').pop();
     if (url) {
       this.id = parseInt(url, 10);

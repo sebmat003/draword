@@ -1,3 +1,4 @@
+import { DashboardComponent } from './dashboard.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from 'src/app/_core/components/layout/layout.component';
@@ -11,8 +12,7 @@ const routes: Routes = [
   {
     path: '',
     // canActivate: [AuthGuard],
-    component: LayoutComponent,
-    data: { curved: true, backButton: false },
+    component: DashboardComponent,
     children: [
       { path: 'quick-play', component: QuickPlayComponent },
       { path: 'rooms', component: RoomsComponent },

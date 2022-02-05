@@ -10,6 +10,7 @@ import { DashboardRoutingModule } from './dashboard.routing';
 import { QuickPlayComponent } from './quick-play/quick-play.component';
 import { RoomsComponent } from './rooms/rooms.component';
 import { RulesComponent } from './rules/rules.component';
+import { PlayersOnlineComponent } from './players-online/players-online.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { RulesComponent } from './rules/rules.component';
     DashboardComponent,
     AddCategoryModalComponent,
     DeleteCategoryModalComponent,
+    PlayersOnlineComponent,
   ],
   imports: [CommonModule, CoreModule, DashboardRoutingModule, RouterModule],
   providers: [],

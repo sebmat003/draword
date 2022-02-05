@@ -1,3 +1,4 @@
+import { LayoutComponent } from './../_core/components/layout/layout.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -6,7 +7,8 @@ import { GameComponent } from './game/game.component';
 const routes: Routes = [
   {
     path: 'game',
-    component: GameComponent,
+    component: LayoutComponent,
+    data: { curved: false, backButton: true },
     loadChildren: () => import('./game/game.module').then((m) => m.GameModule),
   },
   {
@@ -16,7 +18,8 @@ const routes: Routes = [
   },
   {
     path: 'dashboard',
-    component: DashboardComponent,
+    component: LayoutComponent,
+    data: { curved: true, backButton: false },
     loadChildren: () =>
       import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
   },

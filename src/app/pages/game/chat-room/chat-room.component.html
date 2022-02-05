@@ -1,0 +1,11 @@
+<div class="side-panel side-right">
+  <ul class="list-group full-width">
+    <li class="list-group-item" *ngFor="let message of game.messages">
+      <div class="d-flex justify-content-between">
+        <div class="text-small">{{message.datetime}}</div>
+        <div class="text-small">{{message.author}}</div>
+      </div>
+      <div class="text-right">{{message.message}}</div>
+    </li>
+  </ul>
+</div>

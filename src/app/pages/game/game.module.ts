@@ -5,11 +5,14 @@ import { CoreModule } from 'src/app/_core/_core.module';
 import { DrawingPanelComponent } from './drawing-panel/drawing-panel.component';
 import { GameComponent } from './game.component';
 import { GameRoutingModule } from './game.routing';
+import { PlayerListComponent } from './player-list/player-list.component';
+import { ChatRoomComponent } from './chat-room/chat-room.component';
+import { GameInfoComponent } from './game-info/game-info.component';
 
-const COMPONENTS = [GameComponent];
+const COMPONENTS = [GameComponent, DrawingPanelComponent];
 
 @NgModule({
-  declarations: [...COMPONENTS, DrawingPanelComponent],
+  declarations: [...COMPONENTS, PlayerListComponent, ChatRoomComponent, GameInfoComponent],
   imports: [CommonModule, CoreModule, GameRoutingModule, RouterModule],
   providers: [],
 })

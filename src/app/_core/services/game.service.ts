@@ -18,13 +18,14 @@ export class GameService {
         category: { id: 5, custom: false, name: 'animals' },
         drawingData: [],
         messages: [
-          { datetime: '18:43', author: 'Someone', msg: 'dog?' },
+          { datetime: '18:43', author: 'Someone', message: 'dog?' },
           {
             datetime: '18:44',
             author: 'sweqweq',
-            msg: 'ddadasda sdasdas dasd asd asd asdasddasd asdas  das dasdasda',
+            message:
+              'ddadasda sdasdas dasd asd asd asdasddasd asdas  das dasdasda',
           },
-          { datetime: '18:45', author: 'Ddsadas', msg: 'dsad' },
+          { datetime: '18:45', author: 'Ddsadas', message: 'dsad' },
         ],
         players: [
           {

@@ -1,3 +1,6 @@
-<div class="text-center">
+<div class="drawing-panel">
+  <app-game-info class="game-info" [game]="game" [currentWord]="currentWord"></app-game-info>
   <app-canvas></app-canvas>
+  <input class="user-input form-control" [(ngModel)]="userMessage" name="user_message" id="user_message"
+    placeholder="Type here ...">
 </div>
