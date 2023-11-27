@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "draword-frontend"
+  },
+  "targets": {
+    "draword-frontend": {
+      "hosting": {
+        "draword": [
+          "draword-frontend"
+        ]
+      }
+    }
   }
 }
