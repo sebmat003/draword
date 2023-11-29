@@ -1,16 +1,12 @@
-import { Component, Inject, OnInit } from '@angular/core';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { ChangeDetectionStrategy, Component, Inject } from '@angular/core';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { ICategory } from '../../../../models/room.model';
 
 @Component({
   selector: 'app-delete-category-modal',
   templateUrl: './delete-category-modal.component.html',
-  styleUrls: ['./delete-category-modal.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class DeleteCategoryModalComponent implements OnInit {
-  constructor(
-    public dialogRef: MatDialogRef<DeleteCategoryModalComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: any
-  ) {}
-
-  public ngOnInit(): void {}
+export class DeleteCategoryModalComponent {
+  constructor(@Inject(MAT_DIALOG_DATA) public data: ICategory) {}
 }

@@ -1,4 +1,4 @@
-@import '../../../theme/helpers/variables';
+@import 'helpers/variables';
 
 input {
    width: 15rem;
@@ -6,6 +6,7 @@ input {
 
 .arrows {
    width: 2rem;
+
    button {
       padding: 1.7rem 0;
 
@@ -17,6 +18,7 @@ input {
       i {
          color: $secondary;
          transition: color 0.1s;
+
          &:hover {
             color: $primary;
          }

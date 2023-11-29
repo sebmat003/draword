@@ -1,0 +1,28 @@
+@import 'helpers/variables';
+
+@mixin list-group() {
+  .list-group {
+    overflow: auto;
+    height: 85%;
+
+    &.full-width {
+      height: calc(100% - 1rem);
+      margin: 0.5rem 0;
+    }
+
+    &.clickable {
+      cursor: pointer;
+      height: 6rem;
+      border: none;
+
+      &:hover {
+        background-color: $primary;
+        color: white;
+
+        .number {
+          color: white;
+        }
+      }
+    }
+  }
+}

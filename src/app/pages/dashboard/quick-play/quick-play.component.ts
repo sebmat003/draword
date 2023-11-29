@@ -1,17 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ICharacterSet } from 'src/app/models/player.model';
 import { RoomsService } from 'src/app/_core/services/rooms.service';
+import { getRandomInt } from '../../../_core/utils/get-random-int.util';
 
 @Component({
   selector: 'app-quick-play',
   templateUrl: './quick-play.component.html',
   styleUrls: ['./quick-play.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class QuickPlayComponent implements OnInit {
   public characterSet: ICharacterSet = { set: [], gender: 'male' };
 
-  constructor(private roomsService: RoomsService, private router: Router) {}
+  constructor(
+    private roomsService: RoomsService,
+    private router: Router,
+  ) {}
 
   public ngOnInit(): void {
     this.getRandomSet();
@@ -25,6 +30,7 @@ export class QuickPlayComponent implements OnInit {
       this.characterSet.set[type] =
         this.characterSet.set[type] === 5 ? 1 : this.characterSet.set[type] + 1;
     }
+    this.characterSet = { ...this.characterSet };
   }
 
   public getRandomSet(): void {
@@ -35,18 +41,12 @@ export class QuickPlayComponent implements OnInit {
       getRandomInt(min, max),
       getRandomInt(min, max),
     ];
-
-    function getRandomInt(minValue: number, maxValue: number): number {
-      minValue = Math.ceil(min);
-      maxValue = Math.floor(max);
-      return Math.floor(Math.random() * (max - min + 1) + min);
-    }
   }
 
   public moveToExistingGame(): void {
     const games = this.roomsService.dummyRooms
       .filter((el) => el.current_players !== el.max_players)
       .sort((a, b) => b.current_players - a.current_players);
-    this.router.navigateByUrl('/game/' + games[0].id);
+    void this.router.navigateByUrl('/game/' + games[0].id);
   }
 }

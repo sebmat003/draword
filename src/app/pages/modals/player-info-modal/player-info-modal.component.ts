@@ -1,16 +1,12 @@
-import { Component, Inject, OnInit } from '@angular/core';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { ChangeDetectionStrategy, Component, Inject } from '@angular/core';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { IPlayer } from '../../../models/player.model';
 
 @Component({
   selector: 'app-player-info-modal',
   templateUrl: './player-info-modal.component.html',
-  styleUrls: ['./player-info-modal.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class PlayerInfoModalComponent implements OnInit {
-  constructor(
-    public dialogRef: MatDialogRef<PlayerInfoModalComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: any
-  ) {}
-
-  public ngOnInit(): void {}
+export class PlayerInfoModalComponent {
+  constructor(@Inject(MAT_DIALOG_DATA) public data: IPlayer) {}
 }

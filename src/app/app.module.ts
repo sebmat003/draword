@@ -22,14 +22,12 @@ const MODULES = [
   BrowserAnimationsModule,
   HttpClientModule,
   FormsModule,
+  NoopAnimationsModule
 ];
 
-const PIPES = [];
-const DIRECTIVES = [];
-
 @NgModule({
-  declarations: [...COMPONENTS],
-  imports: [...MODULES, NoopAnimationsModule],
+  declarations: [COMPONENTS],
+  imports: [MODULES],
   providers: [
     {
       provide: MAT_DIALOG_DEFAULT_OPTIONS,

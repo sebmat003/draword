@@ -1,0 +1,15 @@
+:host {
+  position: relative;
+}
+
+body {
+  background: none;
+}
+
+canvas {
+  padding: 0;
+  margin: 0;
+  background: url("/assets/images/background/board.png") no-repeat center center fixed;
+  background-size: cover;
+}
+

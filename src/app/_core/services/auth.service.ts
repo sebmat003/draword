@@ -6,7 +6,6 @@ import { IUser } from 'src/app/models/player.model';
 })
 export class AuthService {
   public user: IUser;
-  public token!: string;
 
   constructor() {
     // dummy

@@ -5,7 +5,6 @@ import { Injectable } from '@angular/core';
 })
 export class DrawingService {
   public drawingMode = true;
-  public drawingData: any;
 
   constructor() {}
 }

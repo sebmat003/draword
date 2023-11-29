@@ -3,6 +3,7 @@ export interface ICategory {
   name: string;
   custom: boolean;
   words?: string[];
+  selected?: boolean;
 }
 
 export interface IRoom {

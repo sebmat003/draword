@@ -1,5 +1,4 @@
-import { Message } from '@angular/compiler/src/i18n/i18n_ast';
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { IGame } from 'src/app/models/game.model';
 import { IPlayer } from 'src/app/models/player.model';
@@ -10,7 +9,7 @@ import { RoomsService } from 'src/app/_core/services/rooms.service';
 @Component({
   selector: 'app-game',
   templateUrl: './game.component.html',
-  styleUrls: ['./game.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class GameComponent implements OnInit {
   public id!: number;
@@ -20,14 +19,14 @@ export class GameComponent implements OnInit {
   constructor(
     private router: Router,
     private roomsService: RoomsService,
-    private gameService: GameService
+    private gameService: GameService,
   ) {}
 
   public ngOnInit(): void {
-    this._initializeSettings();
+    this.initializeSettings();
   }
 
-  private _initializeSettings(): void {
+  private initializeSettings(): void {
     const url = this.router.url.split('/').pop();
     if (url) {
       this.id = parseInt(url, 10);
@@ -36,12 +35,12 @@ export class GameComponent implements OnInit {
     this.game = this.gameService.getGameById(this.id);
     this.game.players = this.game.players.sort(
       (p1: IPlayer, p2: IPlayer) =>
-        (p2.currentPoints || 0) - (p1.currentPoints || 0)
+        (p2.currentPoints || 0) - (p1.currentPoints || 0),
     );
     this.currentWord =
       this.game.guessedWordProgress +
       '_'.repeat(
-        this.game.currentWord.length - this.game.guessedWordProgress.length
+        this.game.currentWord.length - this.game.guessedWordProgress.length,
       );
   }
 }

@@ -1,0 +1,644 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.1.2",
+  "deps": {
+    "@angular/animations": "^17.0.4",
+    "@angular/cdk": "^17.0.1",
+    "@angular/common": "^17.0.4",
+    "@angular/compiler": "^17.0.4",
+    "@angular/core": "^17.0.4",
+    "@angular/fire": "^17.0.0-next.0",
+    "@angular/forms": "^17.0.4",
+    "@angular/material": "^17.0.1",
+    "@angular/platform-browser": "^17.0.4",
+    "@angular/platform-browser-dynamic": "^17.0.4",
+    "@angular/router": "^17.0.4",
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bootstrap": "^5.3.2",
+    "codelyzer": "^6.0.2",
+    "firebase": "^10.6.0",
+    "rxfire": "^6.0.0",
+    "rxjs": "~7.8.1",
+    "tslib": "^2.6.2",
+    "zone.js": "~0.14.2",
+    "@angular-devkit/build-angular": "^17.0.3",
+    "@angular-eslint/builder": "17.1.0",
+    "@angular-eslint/eslint-plugin": "17.1.0",
+    "@angular-eslint/eslint-plugin-template": "17.1.0",
+    "@angular-eslint/schematics": "17.1.0",
+    "@angular-eslint/template-parser": "17.1.0",
+    "@angular/cli": "^17.0.3",
+    "@angular/compiler-cli": "^17.0.4",
+    "@types/jasmine": "~3.10.0",
+    "@types/node": "^12.11.1",
+    "@typescript-eslint/eslint-plugin": "6.11.0",
+    "@typescript-eslint/parser": "6.11.0",
+    "eslint": "^8.53.0",
+    "jasmine-core": "~3.10.0",
+    "karma": "~6.3.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.0.3",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "~1.7.0",
+    "typescript": "~5.2.2"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {},
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "17241496168097493888"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "14645878845883387518"
+      },
+      {
+        "file": ".firebaserc",
+        "hash": "360973628813278129"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "15694309210316252261"
+      },
+      {
+        "file": "README.md",
+        "hash": "8410352730092582930"
+      },
+      {
+        "file": "angular.json",
+        "hash": "1054375047639348837"
+      },
+      {
+        "file": "firebase.json",
+        "hash": "10141420363552147213"
+      },
+      {
+        "file": "karma.conf.js",
+        "hash": "9855542327250218851"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "11585976878298676845"
+      },
+      {
+        "file": "package.json",
+        "hash": "2034140469656071263"
+      },
+      {
+        "file": "src/app/_core/_core.module.ts",
+        "hash": "8285936593264272251"
+      },
+      {
+        "file": "src/app/_core/components/canvas/canvas.component.html",
+        "hash": "372746134980918830"
+      },
+      {
+        "file": "src/app/_core/components/canvas/canvas.component.scss",
+        "hash": "2027735564940826696"
+      },
+      {
+        "file": "src/app/_core/components/canvas/canvas.component.ts",
+        "hash": "9137815240880127358"
+      },
+      {
+        "file": "src/app/_core/components/display-character/display-character.component.html",
+        "hash": "6319277811902005820"
+      },
+      {
+        "file": "src/app/_core/components/display-character/display-character.component.scss",
+        "hash": "15856872936290558006"
+      },
+      {
+        "file": "src/app/_core/components/display-character/display-character.component.ts",
+        "hash": "16842244704429566808"
+      },
+      {
+        "file": "src/app/_core/components/layout/layout.component.html",
+        "hash": "13090488860656827582"
+      },
+      {
+        "file": "src/app/_core/components/layout/layout.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/_core/components/layout/layout.component.ts",
+        "hash": "4024813251707684259"
+      },
+      {
+        "file": "src/app/_core/components/navbar/navbar.component.html",
+        "hash": "8209713393895073221"
+      },
+      {
+        "file": "src/app/_core/components/navbar/navbar.component.scss",
+        "hash": "9434674845631317494"
+      },
+      {
+        "file": "src/app/_core/components/navbar/navbar.component.ts",
+        "hash": "6898403989902680430"
+      },
+      {
+        "file": "src/app/_core/components/navigation/navigation.component.html",
+        "hash": "1866819212332685075"
+      },
+      {
+        "file": "src/app/_core/components/navigation/navigation.component.scss",
+        "hash": "1447694956409695498"
+      },
+      {
+        "file": "src/app/_core/components/navigation/navigation.component.ts",
+        "hash": "681370757924348446"
+      },
+      {
+        "file": "src/app/_core/components/sidebar/sidebar.component.html",
+        "hash": "7263684991053101096"
+      },
+      {
+        "file": "src/app/_core/components/sidebar/sidebar.component.scss",
+        "hash": "9398376828780886262"
+      },
+      {
+        "file": "src/app/_core/components/sidebar/sidebar.component.ts",
+        "hash": "14402773566967576937"
+      },
+      {
+        "file": "src/app/_core/components/table/table.component.html",
+        "hash": "8933262351366371454"
+      },
+      {
+        "file": "src/app/_core/components/table/table.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/_core/components/table/table.component.ts",
+        "hash": "18116994555200295662"
+      },
+      {
+        "file": "src/app/_core/services/auth.service.ts",
+        "hash": "2592670354076240821"
+      },
+      {
+        "file": "src/app/_core/services/drawing.service.ts",
+        "hash": "3185385478674155109"
+      },
+      {
+        "file": "src/app/_core/services/game.service.ts",
+        "hash": "9337492434254367043"
+      },
+      {
+        "file": "src/app/_core/services/players.service.ts",
+        "hash": "6987638039043964836"
+      },
+      {
+        "file": "src/app/_core/services/rooms.service.ts",
+        "hash": "8301098496385644413"
+      },
+      {
+        "file": "src/app/_core/services/ws-connection.service.ts",
+        "hash": "16711021099231629374"
+      },
+      {
+        "file": "src/app/app.component.html",
+        "hash": "16498897523005705592"
+      },
+      {
+        "file": "src/app/app.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/app.component.ts",
+        "hash": "2976346301964408691"
+      },
+      {
+        "file": "src/app/app.module.ts",
+        "hash": "4408300719972248742"
+      },
+      {
+        "file": "src/app/app.routing.ts",
+        "hash": "7216887878301252053"
+      },
+      {
+        "file": "src/app/models/canvasData.model.ts",
+        "hash": "3341790383740164580"
+      },
+      {
+        "file": "src/app/models/game.model.ts",
+        "hash": "918220709480985247"
+      },
+      {
+        "file": "src/app/models/mousePosition.model.ts",
+        "hash": "8995465704776589091"
+      },
+      {
+        "file": "src/app/models/navbar.model.ts",
+        "hash": "1796471584398598099"
+      },
+      {
+        "file": "src/app/models/player.model.ts",
+        "hash": "16759811839172903897"
+      },
+      {
+        "file": "src/app/models/room.model.ts",
+        "hash": "15534941838690901261"
+      },
+      {
+        "file": "src/app/models/tab.model.ts",
+        "hash": "11828043000025389094"
+      },
+      {
+        "file": "src/app/pages/dashboard/create-room/add-category-modal/add-category-modal.component.html",
+        "hash": "2283361093626547143"
+      },
+      {
+        "file": "src/app/pages/dashboard/create-room/add-category-modal/add-category-modal.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/pages/dashboard/create-room/add-category-modal/add-category-modal.component.ts",
+        "hash": "1837598780375661034"
+      },
+      {
+        "file": "src/app/pages/dashboard/create-room/create-room.component.html",
+        "hash": "9928730488461845978"
+      },
+      {
+        "file": "src/app/pages/dashboard/create-room/create-room.component.scss",
+        "hash": "17961411068680918512"
+      },
+      {
+        "file": "src/app/pages/dashboard/create-room/create-room.component.ts",
+        "hash": "10963452095004642280"
+      },
+      {
+        "file": "src/app/pages/dashboard/create-room/delete-category-modal/delete-category-modal.component.html",
+        "hash": "17171261402581926165"
+      },
+      {
+        "file": "src/app/pages/dashboard/create-room/delete-category-modal/delete-category-modal.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/pages/dashboard/create-room/delete-category-modal/delete-category-modal.component.ts",
+        "hash": "10032033485891127352"
+      },
+      {
+        "file": "src/app/pages/dashboard/dashboard.component.html",
+        "hash": "11600142794942628110"
+      },
+      {
+        "file": "src/app/pages/dashboard/dashboard.component.scss",
+        "hash": "18205063024096998072"
+      },
+      {
+        "file": "src/app/pages/dashboard/dashboard.component.ts",
+        "hash": "17929958214199935931"
+      },
+      {
+        "file": "src/app/pages/dashboard/dashboard.module.ts",
+        "hash": "1849495044198467349"
+      },
+      {
+        "file": "src/app/pages/dashboard/dashboard.routing.ts",
+        "hash": "7575000394622790174"
+      },
+      {
+        "file": "src/app/pages/dashboard/players-online/players-online.component.html",
+        "hash": "10419412848139840282"
+      },
+      {
+        "file": "src/app/pages/dashboard/players-online/players-online.component.scss",
+        "hash": "3670776681143528647"
+      },
+      {
+        "file": "src/app/pages/dashboard/players-online/players-online.component.spec.ts",
+        "hash": "13272631957508279245"
+      },
+      {
+        "file": "src/app/pages/dashboard/players-online/players-online.component.ts",
+        "hash": "9050729601323459678"
+      },
+      {
+        "file": "src/app/pages/dashboard/quick-play/quick-play.component.html",
+        "hash": "17448896146696630489"
+      },
+      {
+        "file": "src/app/pages/dashboard/quick-play/quick-play.component.scss",
+        "hash": "16835089432841547109"
+      },
+      {
+        "file": "src/app/pages/dashboard/quick-play/quick-play.component.ts",
+        "hash": "15283381486385971898"
+      },
+      {
+        "file": "src/app/pages/dashboard/rooms/rooms.component.html",
+        "hash": "11303589491729485164"
+      },
+      {
+        "file": "src/app/pages/dashboard/rooms/rooms.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/pages/dashboard/rooms/rooms.component.ts",
+        "hash": "906630914845748866"
+      },
+      {
+        "file": "src/app/pages/dashboard/rules/rules.component.html",
+        "hash": "5717225655911794998"
+      },
+      {
+        "file": "src/app/pages/dashboard/rules/rules.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/pages/dashboard/rules/rules.component.ts",
+        "hash": "481208175281194253"
+      },
+      {
+        "file": "src/app/pages/game/chat-room/chat-room.component.html",
+        "hash": "2338041468380494002"
+      },
+      {
+        "file": "src/app/pages/game/chat-room/chat-room.component.scss",
+        "hash": "11404994227958019357"
+      },
+      {
+        "file": "src/app/pages/game/chat-room/chat-room.component.spec.ts",
+        "hash": "1754879729909742935"
+      },
+      {
+        "file": "src/app/pages/game/chat-room/chat-room.component.ts",
+        "hash": "4972092373443576659"
+      },
+      {
+        "file": "src/app/pages/game/drawing-panel/drawing-panel.component.html",
+        "hash": "2946935217478720294"
+      },
+      {
+        "file": "src/app/pages/game/drawing-panel/drawing-panel.component.scss",
+        "hash": "8738192244224101680"
+      },
+      {
+        "file": "src/app/pages/game/drawing-panel/drawing-panel.component.ts",
+        "hash": "9612140617284028273"
+      },
+      {
+        "file": "src/app/pages/game/game-info/game-info.component.html",
+        "hash": "6320896023347969862"
+      },
+      {
+        "file": "src/app/pages/game/game-info/game-info.component.scss",
+        "hash": "18289623270035900086"
+      },
+      {
+        "file": "src/app/pages/game/game-info/game-info.component.spec.ts",
+        "hash": "12632204216451852787"
+      },
+      {
+        "file": "src/app/pages/game/game-info/game-info.component.ts",
+        "hash": "8903980298327149071"
+      },
+      {
+        "file": "src/app/pages/game/game.component.html",
+        "hash": "3087514211620342958"
+      },
+      {
+        "file": "src/app/pages/game/game.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/pages/game/game.component.ts",
+        "hash": "11987814263446483805"
+      },
+      {
+        "file": "src/app/pages/game/game.module.ts",
+        "hash": "17914226080384230164"
+      },
+      {
+        "file": "src/app/pages/game/game.routing.ts",
+        "hash": "10405275503603839484"
+      },
+      {
+        "file": "src/app/pages/game/player-list/player-list.component.html",
+        "hash": "146629962232820239"
+      },
+      {
+        "file": "src/app/pages/game/player-list/player-list.component.scss",
+        "hash": "1230619954337720673"
+      },
+      {
+        "file": "src/app/pages/game/player-list/player-list.component.spec.ts",
+        "hash": "14000072262135889238"
+      },
+      {
+        "file": "src/app/pages/game/player-list/player-list.component.ts",
+        "hash": "15264224374184322483"
+      },
+      {
+        "file": "src/app/pages/login/login.component.html",
+        "hash": "6207174011724479533"
+      },
+      {
+        "file": "src/app/pages/login/login.component.scss",
+        "hash": "5183600500550251618"
+      },
+      {
+        "file": "src/app/pages/login/login.component.ts",
+        "hash": "16099097040583354140"
+      },
+      {
+        "file": "src/app/pages/login/login.module.ts",
+        "hash": "2906649799315520549"
+      },
+      {
+        "file": "src/app/pages/login/login.routing.ts",
+        "hash": "15619496134833058244"
+      },
+      {
+        "file": "src/app/pages/modals/player-info-modal/player-info-modal.component.html",
+        "hash": "10608066833495996420"
+      },
+      {
+        "file": "src/app/pages/modals/player-info-modal/player-info-modal.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/pages/modals/player-info-modal/player-info-modal.component.ts",
+        "hash": "8842426595658246891"
+      },
+      {
+        "file": "src/app/pages/pages.module.ts",
+        "hash": "13430424602178311658"
+      },
+      {
+        "file": "src/app/pages/pages.routing.ts",
+        "hash": "6967777742483213170"
+      },
+      {
+        "file": "assets/styles_styles.scss",
+        "hash": "1896532377028352678"
+      },
+      {
+        "file": "assets/stylesgeneral/_bootstrap.scss",
+        "hash": "4669254476240642862"
+      },
+      {
+        "file": "assets/stylesgeneral/_buttons.scss",
+        "hash": "10515189671133212430"
+      },
+      {
+        "file": "assets/stylesgeneral/_global.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "assets/stylesgeneral/_table.scss",
+        "hash": "13536024297900981946"
+      },
+      {
+        "file": "assets/stylesgeneral/_typography.scss",
+        "hash": "6370864004731424434"
+      },
+      {
+        "file": "assets/styleshelpers/_variables.scss",
+        "hash": "759816401641410704"
+      },
+      {
+        "file": "assets/styleslayout/_page.scss",
+        "hash": "5774302497422263654"
+      },
+      {
+        "file": "src/assets/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/assets/fonts/cheri.ttf",
+        "hash": "9106387534402042252"
+      },
+      {
+        "file": "src/assets/images/arrow-left.svg",
+        "hash": "773652007938111310"
+      },
+      {
+        "file": "src/assets/images/arrow-right.svg",
+        "hash": "5061970898901359319"
+      },
+      {
+        "file": "src/assets/images/background/board.png",
+        "hash": "4406319206127448444"
+      },
+      {
+        "file": "src/assets/images/logo.svg",
+        "hash": "6711316324800886901"
+      },
+      {
+        "file": "src/assets/images/male-set/body-1.svg",
+        "hash": "11566354400962616019"
+      },
+      {
+        "file": "src/assets/images/male-set/body-2.svg",
+        "hash": "12508238698786234691"
+      },
+      {
+        "file": "src/assets/images/male-set/body-3.svg",
+        "hash": "14522086202107179977"
+      },
+      {
+        "file": "src/assets/images/male-set/body-4.svg",
+        "hash": "8844984942098284567"
+      },
+      {
+        "file": "src/assets/images/male-set/body-5.svg",
+        "hash": "12331441069071402006"
+      },
+      {
+        "file": "src/assets/images/male-set/hair-1.svg",
+        "hash": "9544488532839340741"
+      },
+      {
+        "file": "src/assets/images/male-set/hair-2.svg",
+        "hash": "8447695594867543359"
+      },
+      {
+        "file": "src/assets/images/male-set/hair-3.svg",
+        "hash": "707066484503801111"
+      },
+      {
+        "file": "src/assets/images/male-set/hair-4.svg",
+        "hash": "16405328553287042643"
+      },
+      {
+        "file": "src/assets/images/male-set/hair-5.svg",
+        "hash": "6264755074878189707"
+      },
+      {
+        "file": "src/assets/images/male-set/head-1.svg",
+        "hash": "4134119537805506666"
+      },
+      {
+        "file": "src/assets/images/male-set/head-2.svg",
+        "hash": "10799790904062154926"
+      },
+      {
+        "file": "src/assets/images/male-set/head-3.svg",
+        "hash": "13558641013956009580"
+      },
+      {
+        "file": "src/assets/images/male-set/head-4.svg",
+        "hash": "17593995600853971982"
+      },
+      {
+        "file": "src/assets/images/male-set/head-5.svg",
+        "hash": "15815509684470788057"
+      },
+      {
+        "file": "src/assets/images/paper-background.svg",
+        "hash": "896658257688310295"
+      },
+      {
+        "file": "src/environments/environment.prod.ts",
+        "hash": "11847377846594200203"
+      },
+      {
+        "file": "src/environments/environment.ts",
+        "hash": "14410313991637913761"
+      },
+      {
+        "file": "src/favicon.ico",
+        "hash": "3464744996580215640"
+      },
+      {
+        "file": "src/index.html",
+        "hash": "15183801236207920647"
+      },
+      {
+        "file": "src/main.ts",
+        "hash": "11681253612016894649"
+      },
+      {
+        "file": "src/polyfills.ts",
+        "hash": "18064416744314232023"
+      },
+      {
+        "file": "src/styles.scss",
+        "hash": "11767616609176016766"
+      },
+      {
+        "file": "src/test.ts",
+        "hash": "7876741224155508608"
+      },
+      {
+        "file": "tsconfig.app.json",
+        "hash": "7685451593566938896"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "11458013123432513157"
+      },
+      {
+        "file": "tsconfig.spec.json",
+        "hash": "14277469517724802009"
+      }
+    ]
+  }
+}

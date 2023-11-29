@@ -1,7 +1,10 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "c8a359bb-624a-46d9-b0f4-219e6320c301"
+    "analytics": "c8a359bb-624a-46d9-b0f4-219e6320c301",
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   },
   "version": 1,
   "newProjectRoot": "projects",
@@ -37,6 +40,11 @@
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/assets/styles"
+              ]
+            },
             "scripts": []
           },
           "configurations": {
@@ -76,10 +84,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "draword:build:production"
+              "buildTarget": "draword:build:production"
             },
             "development": {
-              "browserTarget": "draword:build:development"
+              "buildTarget": "draword:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -87,7 +95,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "draword:build"
+            "buildTarget": "draword:build"
           }
         },
         "test": {
@@ -117,6 +125,15 @@
             "browserTarget": "draword:build:production",
             "firebaseProject": "draword-frontend",
             "firebaseHostingSite": "draword-frontend"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
           }
         }
       }

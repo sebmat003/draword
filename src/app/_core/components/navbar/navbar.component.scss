@@ -1,4 +1,5 @@
-@import "../../../theme/helpers/variables";
+@import 'helpers/variables';
+
 .navbar {
   width: 100%;
   height: 10rem;
@@ -6,9 +7,16 @@
   justify-content: center;
   z-index: 2;
 
+  img {
+    position: absolute;
+    width: 20rem;
+    height: auto;
+  }
+
   &.plain-navbar {
     background-color: $primary;
     height: 5rem;
+
     img {
       width: 12rem;
     }
@@ -16,6 +24,7 @@
 
   .wavy-navbar {
     overflow: hidden;
+
     svg {
       position: absolute;
       top: 0;
@@ -24,16 +33,9 @@
       fill: $primary;
     }
   }
-
-  img {
-    position: absolute;
-    width: 20rem;
-    height: auto;
-  }
 }
 
 .back-menu {
   position: absolute;
-  // top: 0;
   left: 1rem;
 }

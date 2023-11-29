@@ -8,12 +8,21 @@ import { GameRoutingModule } from './game.routing';
 import { PlayerListComponent } from './player-list/player-list.component';
 import { ChatRoomComponent } from './chat-room/chat-room.component';
 import { GameInfoComponent } from './game-info/game-info.component';
+import { CanvasComponent } from './drawing-panel/components/canvas/canvas.component';
+import { CanvasOptionsComponent } from './drawing-panel/components/canvas-options/canvas-options.component';
 
-const COMPONENTS = [GameComponent, DrawingPanelComponent];
+const COMPONENTS = [
+  GameComponent,
+  DrawingPanelComponent,
+  CanvasComponent,
+  PlayerListComponent,
+  ChatRoomComponent,
+  GameInfoComponent,
+];
+const MODULES = [CommonModule, CoreModule, GameRoutingModule, RouterModule];
 
 @NgModule({
-  declarations: [...COMPONENTS, PlayerListComponent, ChatRoomComponent, GameInfoComponent],
-  imports: [CommonModule, CoreModule, GameRoutingModule, RouterModule],
-  providers: [],
+  declarations: [COMPONENTS],
+  imports: [MODULES, CanvasOptionsComponent],
 })
 export class GameModule {}

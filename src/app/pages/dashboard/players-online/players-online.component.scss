@@ -1,13 +1,15 @@
-@import "../../../theme/helpers/variables";
+@import "helpers/variables";
 
 .side-panel {
   z-index: 2;
+
   .player-info {
     width: 80%;
     margin: 2rem 10%;
     text-align: center;
     height: 10%;
     max-height: 10%;
+
     .level-bar {
       position: relative;
       width: 100%;
@@ -19,7 +21,7 @@
         background-color: transparent;
         position: absolute;
         height: inherit;
-        border-left: 0px solid transparent;
+        border-left: 0 solid transparent;
         border-right: 0.5rem solid transparent;
         border-top: 0.5rem solid $primary;
       }
@@ -29,6 +31,7 @@
       width: 60%;
       margin: 0 20%;
       text-align: left;
+
       .group {
         display: flex;
         font-size: 0.9rem;
