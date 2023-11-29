@@ -17,11 +17,15 @@ import { IMousePosition } from 'src/app/models/mousePosition.model';
 import { DrawingService } from '../../../../../_core/services/drawing.service';
 import { WebSocketConnectionService } from '../../../../../_core/services/ws-connection.service';
 import { convertRemToPixels } from '../../../../../_core/utils/convert-rem-to-px.util';
+import { CanvasOptionsComponent } from '../canvas-options/canvas-options.component';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-canvas',
   templateUrl: './canvas.component.html',
   styleUrls: ['./canvas.component.scss'],
+  standalone: true,
+  imports: [CanvasOptionsComponent, NgIf],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CanvasComponent implements OnInit, AfterViewInit, OnDestroy {

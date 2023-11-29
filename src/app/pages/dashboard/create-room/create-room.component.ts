@@ -1,15 +1,31 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { MatCheckboxChange } from '@angular/material/checkbox';
+import {
+  MatCheckboxChange,
+  MatCheckboxModule,
+} from '@angular/material/checkbox';
 import { ICategory } from 'src/app/models/room.model';
 import { RoomsService } from 'src/app/_core/services/rooms.service';
 import { AddCategoryModalComponent } from './add-category-modal/add-category-modal.component';
 import { MatDialog } from '@angular/material/dialog';
 import { DeleteCategoryModalComponent } from './delete-category-modal/delete-category-modal.component';
+import { MatRadioModule } from '@angular/material/radio';
+import { FormsModule } from '@angular/forms';
+import { MatSelectModule } from '@angular/material/select';
+import { NgForOf, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-create-room',
   templateUrl: './create-room.component.html',
   styleUrls: ['./create-room.component.scss'],
+  standalone: true,
+  imports: [
+    MatRadioModule,
+    FormsModule,
+    MatSelectModule,
+    MatCheckboxModule,
+    NgForOf,
+    NgIf,
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CreateRoomComponent {

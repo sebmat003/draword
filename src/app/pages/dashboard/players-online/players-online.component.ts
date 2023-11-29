@@ -4,11 +4,15 @@ import { MatDialog } from '@angular/material/dialog';
 import { AuthService } from '../../../_core/services/auth.service';
 import { PlayersService } from '../../../_core/services/players.service';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { MatTableModule } from '@angular/material/table';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-players-online',
   templateUrl: './players-online.component.html',
   styleUrls: ['./players-online.component.scss'],
+  standalone: true,
+  imports: [MatTableModule, DatePipe],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PlayersOnlineComponent {

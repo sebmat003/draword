@@ -5,10 +5,21 @@ import { IPlayer } from 'src/app/models/player.model';
 import { IRoom } from 'src/app/models/room.model';
 import { GameService } from 'src/app/_core/services/game.service';
 import { RoomsService } from 'src/app/_core/services/rooms.service';
+import { ChatRoomComponent } from './chat-room/chat-room.component';
+import { PlayerListComponent } from './player-list/player-list.component';
+import { DrawingPanelComponent } from './drawing-panel/drawing-panel.component';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-game',
   templateUrl: './game.component.html',
+  standalone: true,
+  imports: [
+    DrawingPanelComponent,
+    ChatRoomComponent,
+    PlayerListComponent,
+    NgIf,
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class GameComponent implements OnInit {

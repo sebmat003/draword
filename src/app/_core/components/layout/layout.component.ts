@@ -4,30 +4,33 @@ import {
   OnDestroy,
   OnInit,
 } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { Subscription } from 'rxjs';
+import { ActivatedRoute, Data, RouterOutlet } from '@angular/router';
+import { Subject } from 'rxjs';
 import { INavbarData } from 'src/app/models/navbar.model';
+import { takeUntil } from 'rxjs/operators';
+import { SidebarComponent } from '../sidebar/sidebar.component';
+import { NavbarComponent } from '../navbar/navbar.component';
 
 @Component({
   selector: 'app-layout',
   templateUrl: './layout.component.html',
+  standalone: true,
+  imports: [SidebarComponent, RouterOutlet, NavbarComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LayoutComponent implements OnInit, OnDestroy {
   public navbarData!: INavbarData;
-  public subscription: Subscription = new Subscription();
+  private destroy$ = new Subject<void>();
 
   constructor(private route: ActivatedRoute) {}
 
   public ngOnInit(): void {
-    this.subscription = this.route.data.subscribe((data: any) => {
-      this.navbarData = {
-        ...data,
-      };
+    this.route.data.pipe(takeUntil(this.destroy$)).subscribe((data: Data) => {
+      this.navbarData = data as INavbarData;
     });
   }
 
   public ngOnDestroy(): void {
-    this.subscription.unsubscribe();
+    this.destroy$.next();
   }
 }

@@ -3,11 +3,14 @@ import { Router } from '@angular/router';
 import { ICharacterSet } from 'src/app/models/player.model';
 import { RoomsService } from 'src/app/_core/services/rooms.service';
 import { getRandomInt } from '../../../_core/utils/get-random-int.util';
+import { DisplayCharacterComponent } from '../../../_core/components/display-character/display-character.component';
 
 @Component({
   selector: 'app-quick-play',
   templateUrl: './quick-play.component.html',
   styleUrls: ['./quick-play.component.scss'],
+  standalone: true,
+  imports: [DisplayCharacterComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class QuickPlayComponent implements OnInit {

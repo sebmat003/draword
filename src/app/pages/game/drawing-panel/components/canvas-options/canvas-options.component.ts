@@ -11,6 +11,8 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-canvas-options',
+  templateUrl: './canvas-options.component.html',
+  styleUrl: './canvas-options.component.scss',
   standalone: true,
   imports: [
     CommonModule,
@@ -18,8 +20,6 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
     NgxSliderModule,
     ReactiveFormsModule,
   ],
-  templateUrl: './canvas-options.component.html',
-  styleUrl: './canvas-options.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CanvasOptionsComponent implements OnInit {
@@ -31,7 +31,6 @@ export class CanvasOptionsComponent implements OnInit {
   public previousTool!: string;
 
   ngOnInit() {
-    console.log(this.ctx, 'hajnsdfkjbajhkfbasjkhdf');
     this.changeTool(this.activeTool);
   }
 

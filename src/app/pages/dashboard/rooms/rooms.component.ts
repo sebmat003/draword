@@ -4,14 +4,25 @@ import {
   OnInit,
   ViewChild,
 } from '@angular/core';
-import { MatSort } from '@angular/material/sort';
-import { MatTableDataSource } from '@angular/material/table';
+import { MatSort, MatSortModule } from '@angular/material/sort';
+import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { IRoom } from 'src/app/models/room.model';
 import { RoomsService } from 'src/app/_core/services/rooms.service';
+import { MatButtonModule } from '@angular/material/button';
+import { MatBadgeModule } from '@angular/material/badge';
+import { NgForOf } from '@angular/common';
 
 @Component({
   selector: 'app-rooms',
   templateUrl: './rooms.component.html',
+  standalone: true,
+  imports: [
+    MatSortModule,
+    MatTableModule,
+    MatButtonModule,
+    MatBadgeModule,
+    NgForOf,
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class RoomsComponent implements OnInit {
