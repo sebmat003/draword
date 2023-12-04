@@ -1,0 +1,14 @@
+{
+  "root": true,
+  "overrides": [
+    {
+      "files": [
+        "*.ts"
+      ],
+      "extends": [
+        "plugin:unicorn/recommended",
+        "plugin:@typescript-eslint/recommended"
+      ]
+    }
+  ]
+}
