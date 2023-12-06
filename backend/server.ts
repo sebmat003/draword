@@ -1,9 +1,11 @@
 import express from "express";
+import cors from "cors";
 import path from "node:path";
 import { Request, Response } from "express";
-import Database from "./src/db/database-connection.ts";
+import connectToDatabase from "./src/components/db/database-connection.ts";
 import * as url from "node:url";
 import dotenv from "dotenv";
+import apiRouter from "./src/routes/index.js";
 
 if (process.env.NODE_ENV !== "production") {
   dotenv.config({
@@ -16,11 +18,12 @@ if (process.env.NODE_ENV !== "production") {
 
 const app = express();
 const port = process.env.PORT || 3000;
-const database = new Database();
-database.connect();
+connectToDatabase();
 
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use("/api", apiRouter);
 
 app.get("/", (request: Request, response: Response) => {
   response.send("Hello, TypeScript Express!");

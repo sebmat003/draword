@@ -14,15 +14,15 @@ export class AuthService {
       email: '',
       id: 1,
       name: 'qwerty90',
-      level: 25,
-      games: 150,
-      inGame: false,
-      ranking: 1024,
-      session_time: 213312,
-      wins: 25,
-      currentExp: 2450,
-      maxExp: 3600,
-      characterSet: { gender: 'male', set: [3, 2, 3] },
+      details: {
+        level: 25,
+        games: 150,
+        wins: 25,
+        currentExp: 2450,
+        maxExp: 3450,
+        ranking: 1024,
+        characterSet: { gender: 'male', set: [3, 2, 3] },
+      },
     };
   }
 }

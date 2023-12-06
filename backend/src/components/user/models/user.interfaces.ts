@@ -1,14 +1,4 @@
-export interface ICharacterSet {
-  set: number[];
-  gender: string;
-}
-
-export interface IPlayer extends IBasicUser {
-  session_time: number;
-  inGame: boolean;
-  currentPoints?: number;
-  isDrawing?: boolean;
-}
+import { GenderEnum, UserRoleEnum } from "./user.enums.js";
 
 export interface IBasicUser {
   id: number;
@@ -26,7 +16,21 @@ export interface IUserDetails {
   characterSet: ICharacterSet;
 }
 
+export interface ICharacterSet {
+  set: number[];
+  gender: GenderEnum;
+}
+
 export interface IUser extends IBasicUser {
   login: string;
   email: string;
+  password: string;
+  role: UserRoleEnum;
+}
+
+export interface IPlayer extends IBasicUser {
+  session_time: number;
+  inGame: boolean;
+  currentPoints?: number;
+  isDrawing?: boolean;
 }
