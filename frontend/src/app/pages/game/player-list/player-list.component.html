@@ -4,15 +4,9 @@
     <div class="table-header">Players</div>
   </div>
   <ul class="list-group">
-    <li
-      class="list-group-item primary clickable"
-      *ngFor="let player of game.players; let i = index"
-    >
+    <li class="list-group-item primary clickable" *ngFor="let player of game.players; let i = index">
       <div class="d-flex justify-content-center align-items-center">
-        <div
-          class="player-umber w-25"
-          [class]="i > 2 ? 'secondary' : 'primary'"
-        >
+        <div class="player-umber w-25" [class]="i > 2 ? 'secondary' : 'primary'">
           {{ i + 1 }}
         </div>
         <div class="d-flex flex-row flex-wrap" style="width: 30%">
@@ -22,11 +16,8 @@
           </div>
         </div>
         <div class="w-25">
-          <app-display-character
-            [characterSet]="player.characterSet"
-            width="5rem"
-            height="5rem"
-          ></app-display-character>
+          <app-display-character [characterSet]="player.details.characterSet" width="5rem"
+            height="5rem"></app-display-character>
         </div>
       </div>
     </li>

@@ -1,21 +1,21 @@
 <div class="side-panel side-right">
   <div class="player-info">
     <div class="d-flex justify-content-between text-primary">
-      <span>Lv. {{user.level}}</span>
-      <span>{{user.currentExp}}/{{user.maxExp}} XP</span>
+      <span>Lv. {{user.details.level}}</span>
+      <span>{{user.details.currentExp}}/{{user.details.maxExp}} XP</span>
     </div>
     <div class="level-bar">
-      <div class="progress-bar" [style]="'width:' + (user.currentExp / user.maxExp * 100) + '%;'"></div>
+      <div class="progress-bar" [style]="'width:' + (user.details.currentExp / user.details.maxExp * 100) + '%;'"></div>
     </div>
     <div class="statistics d-flex flex-row flex-wrap">
       <div class="group">
-        <span>Ranking: </span> <span>{{user.ranking}}</span>
+        <span>Ranking: </span> <span>{{user.details.ranking}}</span>
       </div>
       <div class="group">
-        <span>Games: </span> <span>{{user.games}}</span>
+        <span>Games: </span> <span>{{user.details.games}}</span>
       </div>
       <div class="group">
-        <span>Wins: </span> <span>{{user.wins}}</span>
+        <span>Wins: </span> <span>{{user.details.wins}}</span>
       </div>
     </div>
   </div>
